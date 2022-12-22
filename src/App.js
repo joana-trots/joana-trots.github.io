@@ -1,12 +1,10 @@
 import './App.sass'
 import { Routes, Route } from 'react-router-dom'
-import { useState } from 'react'
-import Layout from './components/layout/index'
+import Layout from './components/layout/'
 import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
-import Portfolio from './components/Portfolio/index'
-import items from './components/Portfolio/Cards/CardsList/cardsList'
+import Portfolio from './components/Portfolio/'
 
 function App() {  
   return (
