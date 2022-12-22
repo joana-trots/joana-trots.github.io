@@ -1,0 +1,167 @@
+$white: #ededed
+$light-pink: #f3a7ff
+$purple: #9d1bff
+$yellow: #FFCC70
+$black: #333333
+$primer-gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)
+$white-gradient: linear-gradient(to top, #dfe9f3 0%, white 100%)
+$purple-gradient: linear-gradient(130deg, #121676, #b200d0)
+$yellow-gradient: linear-gradient(300deg, #f6d365 0%, #fda085 100%)
+
+@import '../layout/responsive.scss'
+
+.contact-page
+    background-image: $primer-gradient
+    display: flex
+    flex-direction: row
+    @include media("<=tablet")
+        flex-direction: column-reverse
+        justify-content: flex-end
+    &__text-zone,
+    &__cover-zone
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__text-zone
+        width: 55%
+        padding: 30px 80px 30px 190px
+        @include media("<=tablet")
+            padding: 30px 0
+            width: calc(100% - 20px)
+            background: rgba(14, 14, 14, 0.675)
+            margin: 20vh 10px
+            border-radius: 19px
+        @include media(">=phone")
+            justify-content: center
+    p
+        font-size: 14px
+        color: $white
+        text-align: center
+        width: 90%
+        animation: pulse 1s 1.2s
+        @include media("<=tablet")
+            display: none
+    .caption
+        opacity: 0
+        animation: fadeIn 2s 1s forwards
+    &__cover-zone 
+        width: 45%
+        background: url(../../assets/images/contact-picture.jpg) center top no-repeat
+        background-size: cover
+        animation: breath 100s linear infinite
+        @include media("<=tablet")
+            width: 100%
+            height: 100vh
+            position: absolute
+            z-index: -1  
+    h1
+        text-align: center
+    p
+        max-width: 280px
+        width: 60%
+        background: $white-gradient
+        color: $purple
+        padding: 26px
+        border-radius: 19px
+        position: relative
+        top: 60%
+        @include media("<=tablet")
+            max-width: 100%
+            width: 80%
+.contact-form
+    display: flex
+    flex-direction: column
+    width: 300px
+    margin: 30px auto 0
+    div
+        margin-top: 12px
+        opacity: 0
+        animation: bounceIn 1s 2s forwards
+        &:nth-child(2)
+            animation-delay: 2.5s
+        &:nth-child(3)
+            animation-delay: 3s  
+    label
+        visibility: hidden
+        position: absolute
+    .label
+        position: absolute
+        display: block
+        margin: -30px 14px
+        color: $white
+        opacity: .76
+        font-size: 14px
+        font-weight: 400
+        z-index: -1
+        transition: 0.5s
+    input:not([type='submit']), textarea
+        padding: 14px 20px
+        border: none
+        border-bottom: 1px solid $white
+        background-color: rgba(51, 51, 51, 0)
+        outline: 0
+        margin: 0
+        width: calc(100% - 40px)
+        transition: 0.5s
+        color: transparent
+        &:focus
+            outline: 0
+        &:focus,
+        &:valid
+            background-color: $white
+            color: $black
+            margin-top: 34px
+            border-radius: 12px
+            & ~ .label
+                margin-left: 0px
+                opacity: 1
+                transform: translateY(-50px)
+        
+    input[type='submit']
+        margin: 40px auto 0
+        width: 120px
+        font-size: 14px
+        transition: .5s
+        opacity: 0
+        animation: bounceIn 1s 3.5s forwards
+        &:hover
+            background-color: $white
+            color: $purple
+            border-color: $purple
+    textarea
+        &::-webkit-scrollbar 
+            width: 4px
+        &::-webkit-scrollbar-track
+            background: rgba(51, 51, 51, 0.16)
+            margin: 12px
+            border-radius: 20px
+        &::-webkit-scrollbar-thumb 
+            background: $purple
+            border-radius: 20px 
+        &::-webkit-scrollbar-thumb:hover
+            background: $black
+            cursor: pointer
+        overflow: auto
+        resize: none
+        height: 25px
+        &:focus,
+        &:valid
+            height: 80px
+            & ~ .label
+                transform: translateY(-108px)
+        & ~ .label
+            margin: -34px 14px
+
+    h1
+        text-align: center
+
+.display-none
+    display: none
+
+@keyframes breath 
+    0%   
+        background-size: auto 100%
+    50% 
+        background-size: auto 150%
+    100% 
+        background-size: auto 100%

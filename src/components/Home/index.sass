@@ -1,0 +1,55 @@
+@import ../layout/responsive.scss
+
+$white: #ededed
+$pink: #a03757
+$light-pink: #f3a7ff
+$yellow: #ffc200
+$primer-gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)
+.home-page
+    background-image: $primer-gradient
+    &__cover-img
+        background-image:  url('../../assets/images/cover.png')
+        width: 100%
+        height: 65vh
+        max-height: 500px
+        background-position: bottom right
+        background-size: contain
+        background-repeat: no-repeat
+        position: absolute
+        bottom: 0
+        right: 5vw
+        @include media("<=tablet")
+            height: 100%
+            right: -20vw
+        @include media("<=phone")
+            width: 135%
+            right: -60%
+    &__text-zone
+        position: absolute
+        top: 44%
+        padding-left: 190px
+        transform: translateY(-50%)
+        max-height: 90%
+        .cv-button, 
+        .contact-button
+            transition: all .5s
+            opacity: 0
+            animation: bounceIn 1s 5s forwards
+        .contact-button
+            animation-delay: 5.4s
+        @include media("<=tablet")
+            padding-left: 10vw
+            h1
+                text-align: left
+        @include media("<=phone")
+            width: 340px
+            padding: 0
+            margin: auto
+            position: relative
+            //top: 0
+            transform: none
+            top: 20vh
+
+            
+            
+

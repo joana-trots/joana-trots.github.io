@@ -1,0 +1,170 @@
+@import ../layout/responsive.scss
+
+$white: #ededed
+$pink: #a03757
+$light-pink: #f3a7ff
+$purple: #9d1bff
+$yellow: #ffc200
+$black: #333333
+$primer-gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)
+$white-gradient: linear-gradient(to top, #dfe9f3 0%, white 100%)
+$purple-gradient: linear-gradient(130deg, #121676, #b200d0)
+$yellow-gradient: linear-gradient(300deg, #f6d365 0%, #fda085 100%)
+%flex-col-center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+.navbar
+    @extend %flex-col-center
+    position: fixed
+    justify-content: space-between
+    background-color: rgba(51, 51, 51, 0.16)
+    width: 68px
+    height: calc(100% - 60px)
+    top: 0
+    z-index: 3
+    margin: 20px
+    padding: 10px
+    border-radius: 25px
+    transition: all 0.2s ease-out
+    &:hover
+        background: $white
+        nav
+            a
+                color: $black
+                &.active
+                    color: $purple
+    &__logo
+        display: block
+        background: #ededed
+        padding: 0
+        width: 100%
+        border-radius: 19px
+        box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px
+        pointer-events: none
+        img
+            width: 50px
+            height: auto
+    nav
+        @extend %flex-col-center
+        gap: 50px
+        a
+            position: relative
+            color: rgba(237, 237, 237, 0.45)
+            font-size: 26px
+            text-decoration: none
+            font-weight: 600
+            @extend %flex-col-center
+            i
+                transition: all 0.4s ease-out
+            &:hover
+                color: $purple
+                svg
+                    opacity: 0
+                &::after
+                    opacity: 1
+            &::after
+                content: ''
+                font-size: 12px
+                letter-spacing: 2px
+                position: absolute
+                bottom: 0
+                display: block
+                opacity: 0
+                transition: all 0.4s ease
+            &:first-child
+                &::after
+                    content: 'HOME'
+            &.about-link
+                &::after
+                    content: 'ABOUT'
+            &.contact-link
+                &::after
+                    content: 'CONTACT'
+            &.portfolio-link
+                &::after
+                    content: 'MY WORK'
+            &.active
+                color: $white
+    ul
+        display: block
+        list-style: none
+        @extend %flex-col-center
+        li
+            a
+                padding: 7px 0
+                display: block
+                font-size: 18px
+                color: #b2b2b2
+                &:hover svg
+                    color: $black
+                    transition: all .5s ease-out
+    
+
+    
+    @include media("<=tablet")
+        height: 55px
+        align-items: flex-start
+        justify-content: start
+        background: transparent
+        margin: 10px
+        padding: 0
+        &:hover
+            background: transparent
+        nav, ul
+            display: none
+        &--active
+            background: $white
+            width: 100%
+            height: 100%
+            z-index: 3
+            margin: 0
+            border-radius: 0
+            &:hover
+                background: $white
+            nav
+                display: flex
+                align-items: flex-start
+                gap: 10px
+                a
+                    flex-direction: row
+                    margin: 30px
+                    gap: 30px
+                    color: $black
+                    font-size: 5.5vw
+                    font-weight: 800
+                    @include media("<=tablet")
+                        font-size: 40px
+                    &.active
+                        color: $purple
+                    &::after
+                        opacity: 1
+                        position: relative
+                        font-size: 6vw
+                        font-weight: 800
+                        @include media("<=tablet")
+                            font-size: 40px
+                    &:hover
+                        svg
+                            opacity: 1
+            ul
+                display: flex
+                flex-direction: row
+                margin: 30px
+                gap: 30px
+                li a
+                    font-size: 5vw
+                    
+            .navbar__logo
+                margin: 20px
+            nav a i::after
+                opacity: 1
+        &__logo
+            width: 68px
+            cursor: pointer
+            pointer-events: auto
+            background: $white-gradient
+            &:hover
+                box-shadow: rgb(57 0 163 / 35%) 0px 3px 20px

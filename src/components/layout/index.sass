@@ -1,0 +1,113 @@
+@import responsive.scss
+
+$white: #ededed
+$pink: #a03757
+$light-pink: #f3a7ff
+$purple: #9d1bff
+$yellow: #FFCC70
+$black: #333333
+$primer-gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)
+$white-gradient: linear-gradient(to top, #dfe9f3 0%, white 100%)
+$purple-gradient: linear-gradient(130deg, #121676, #b200d0)
+$yellow-gradient: linear-gradient(300deg, #f6d365 0%, #fda085 100%)
+.container
+    min-height: 100vh
+    width: 100%
+    will-change: contents
+    position: absolute
+    margin: 0 auto
+    background-repeat: no-repeat
+    background-size: cover
+    overflow: hidden
+    z-index: 1
+    transform-style: preserve-3d 
+    opacity: 0
+    animation: fadeIn 1s 1s forwards
+h1
+    color: $white
+    font-size: 68px
+    font-weight: 800
+    letter-spacing: .1vw
+    @include media("<=tablet")
+        text-align: center
+h2
+    color: $white
+    font-size: 42px
+    font-weight: 300
+    margin-top: 14px
+h3
+    font-size: 1.5rem
+    font-weight: 700
+    margin-top: 14px
+    line-height: 130%
+p,
+.par,
+input,
+label,
+textarea
+    font-weight: 400
+    margin-top: 14px
+    font-size: 16px
+    line-height: 24px
+.caption
+    margin-top: 0
+    color: $light-pink
+    text-transform: uppercase
+    letter-spacing: 0.175em
+    font-size: 16px
+    font-weight: 400                 
+p, .par, .caption
+    cursor: default
+.btn
+    display: inline-block
+    color: $white
+    background: rgba(237, 237, 237, .05)
+    border-radius: 32px
+    padding: 10px 16px
+    font-weight: 400
+    font-size: 12px
+    letter-spacing: 0.175em
+    text-transform: uppercase
+    margin: 30px 20px 0 0
+    border: 1px solid $white
+    cursor: pointer
+    &:hover
+        background: rgba(237, 237, 237, .14)
+
+
+
+/* custom scrollbar */
+::-webkit-scrollbar 
+    width: 4px
+::-webkit-scrollbar-track
+    background: rgba(51, 51, 51, 0.16)
+    margin: 20px
+    border-radius: 20px
+::-webkit-scrollbar-thumb 
+    background: $white
+    border-radius: 20px
+::-webkit-scrollbar-thumb:hover
+    //background: $light-pink
+
+
+@include media("<=desktop")
+    h1
+        font-size: 48px
+    h2
+        font-size: 36px
+@include media("<=phone")
+    h1
+        font-size: 40px
+        letter-spacing: 0
+    h2
+        font-size: 28px
+    h3
+        font-size: 22px
+    p,
+    .par,
+    input,
+    label,
+    textarea,
+    .caption
+        font-size: 14px
+   

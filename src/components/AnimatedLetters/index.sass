@@ -1,0 +1,14 @@
+.text-animate
+    display: inline-block
+    opacity: 0
+    min-width: 10px
+
+@for $i from 1 through 16
+    .text-animate._#{$i}
+        animation: bounceIn 1s 1s forwards
+        animation-delay: #{1+ ($i / 10)}s
+
+@for $i from 17 through 50
+    .text-animate._#{$i}
+        animation: bounceIn 1s 2s forwards
+        animation-delay: #{2 + ($i / 20)}s

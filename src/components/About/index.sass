@@ -1,0 +1,176 @@
+$white: #ededed
+$pink: #a03757
+$light-pink: #f3a7ff
+$purple: #9d1bff
+$yellow: #FFCC70
+$black: #333333
+$primer-gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)
+$white-gradient: linear-gradient(to top, #dfe9f3 0%, white 100%)
+$purple-gradient: linear-gradient(130deg, #121676, #b200d0)
+$yellow-gradient: linear-gradient(300deg, #f6d365 0%, #fda085 100%)
+
+@import '../layout/responsive.scss'
+
+%common-small-block
+    position: relative
+    border-radius: 19px
+    color: $black
+.about-page
+    background-image: $primer-gradient
+    height: 100vh
+    &__text-zone
+        position: relative
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: repeat(3, 1fr)
+        gap: 20px
+        width: calc(100vw - 188px)
+        height: calc(100% - 80px)
+        margin: 20px 20px 20px 128px
+        padding: 20px
+        border-radius: 25px
+        background: rgba(51, 51, 51, 0.16)
+        overflow: auto
+        @include media("<=desktop")
+            display: flex
+            flex-wrap: wrap
+        @include media("<=tablet")
+            width: calc(100vw - 20px)
+            height: calc(100% - 85px)
+            padding: 0
+            margin: 75px 10px
+            background: transparent
+        div
+            &.about-section
+                @extend %common-small-block
+                grid-area: 1 / 1 / 4 / 4
+                display: flex
+                @include media("<1200px")
+                    flex-wrap: wrap
+                &__left-side
+                    width: 100%
+                    padding: 30px
+                    background: $white-gradient
+                    border-radius: 19px
+                    border-top-right-radius: 0
+                    border-bottom-right-radius: 0
+                    overflow: auto
+                    @include media("<1200px")
+                        border-top-left-radius: 19px
+                        border-top-right-radius: 19px
+                        border-bottom-left-radius: 0
+                        border-bottom-right-radius: 0
+                    p
+                        line-height: 180%
+                        padding-right: 100px
+                        animation: pulse 1s
+                        &:nth-of-type(1)
+                            animation-delay: 1.1s
+                        &:nth-of-type(2)
+                            animation-delay: 1.3s
+                        &:nth-of-type(3)
+                            animation-delay: 1.5s
+                        &:nth-of-type(4)
+                            animation-delay: 1.7s
+                            
+                        @include media("<1200px")
+                            padding-right: 0
+                &__right-side
+                    width: 75%
+                    background: $purple-gradient
+                    border-radius: 19px
+                    border-top-left-radius: 0
+                    border-bottom-left-radius: 0
+                    @include media("<1200px")
+                        width: 100%
+                        padding: 30px
+                        border-top-left-radius: 0
+                        border-top-right-radius: 0
+                        border-bottom-left-radius: 19px
+                        border-bottom-right-radius: 19px
+                    img
+                        position: absolute
+                        bottom: 0
+                        right: 0
+                        width: 33vw
+                        border-radius: 19px
+            &[class$='block']
+                @extend %common-small-block
+                display: block
+                padding: 30px
+                font-size: 16px
+                line-height: 24px
+                font-weight: 400
+                transition: all .5s
+                opacity: 0
+                animation: fadeIn 2s 1s forwards
+                cursor: pointer
+
+                p, .par, .caption
+                    @include media(">=desktop", "<=1330px")
+                        font-size: 14px
+                span, a
+                    display: block
+                    opacity: 0
+                    animation: fadeIn 1s 1s forwards
+                .arrow-link
+                    margin-top: 20px
+                    color: $white
+                    display: none
+                    @include media("<1200px")
+                        color: $black
+                        display: block
+                &:hover .arrow-link
+                    animation: headShake 2s
+                    display: block
+                    color: $white
+                &:not(.cv-block)
+                    background-image: $white-gradient
+                    color: $black
+                    @include media("<=desktop")
+                        width: 100%
+                    .caption
+                        color: $black
+                    &::before
+                        content: ''
+                        position: absolute
+                        background-image: $primer-gradient
+                        width: 100%
+                        height: 100%
+                        margin: -30px
+                        border-radius: 19px
+                        opacity: 0
+                        transition: all .5s
+                    &:hover
+                        color: $white
+                        .caption
+                            color: $white
+                        &::before
+                            opacity: 1
+            &.cv-block
+                margin: 70px 50px
+                background-color: rgba(237, 237, 237, 0.05) 
+                color: $white
+                max-width: 250px
+                position: relative
+                z-index: 1
+                @include media("<1200px")
+                    margin: auto 0
+                p, .par
+                    font-size: 14px
+                .arrow-link
+                    display: block
+                    color: $white
+                &:hover
+                    background-color: rgba(237, 237, 237, 0.14)    
+            &.portfolio-block
+                grid-area: 1 / 4 / 2 / 5
+                animation-delay: 2s
+            &.skills-block
+                grid-area: 2 / 4 / 3 / 5
+                animation-delay: 2.5s
+            &.roadmap-block
+                grid-area: 3 / 4 / 4 / 5
+                animation-delay: 3s
+    h1
+        color: $black
