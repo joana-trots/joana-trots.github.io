@@ -26,7 +26,7 @@ const Navbar = () => {
       <NavLink exact="true" activeclassname="active" className="about-link" to="/about" onClick={toggleMenuClick}>
         <FontAwesomeIcon icon={faUser} />
       </NavLink>
-      <NavLink exact="true" activeclassname="active" className="portfolio-link" to="/portfolio" onClick={toggleMenuClick}>
+      <NavLink exact="true" activeclassname="active" className="portfolio-link" to="/my-work" onClick={toggleMenuClick}>
         <FontAwesomeIcon icon={faCode} />
       </NavLink>
       <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" onClick={toggleMenuClick}>
