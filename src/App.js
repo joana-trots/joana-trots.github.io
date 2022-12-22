@@ -9,11 +9,11 @@ import Portfolio from './components/Portfolio'
 function App() {  
   return (
    <Routes>
-    <Route path="/" element={<Layout />} >
-      <Route index path='/' element={<Home />}></Route>
-      <Route path='about' element={<About />}></Route>
-      <Route path='contact' element={<Contact />}></Route>
-      <Route path='my-work' element={<Portfolio />}></Route>
+    <Route path="/portfolio" element={<Layout />} >
+      <Route index path='/portfolio' element={<Home />}></Route>
+      <Route path='/portfolio/about' element={<About />}></Route>
+      <Route path='/portfolio/contact' element={<Contact />}></Route>
+      <Route path='/portfolio/my-work' element={<Portfolio />}></Route>
     </Route>
    </Routes>
   );

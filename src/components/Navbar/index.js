@@ -20,16 +20,16 @@ const Navbar = () => {
       <img src={Logo} alt="logo" />
     </div>
     <nav>
-      <NavLink exact="true" activeclassname="active" to="/" onClick={toggleMenuClick}>
+      <NavLink exact="true" activeclassname="active" end className="home-link" to="/portfolio" onClick={toggleMenuClick}>
         <FontAwesomeIcon icon={faHome} />
       </NavLink>
-      <NavLink exact="true" activeclassname="active" className="about-link" to="/about" onClick={toggleMenuClick}>
+      <NavLink exact="true" activeclassname="active" className="about-link" to="/portfolio/about" onClick={toggleMenuClick}>
         <FontAwesomeIcon icon={faUser} />
       </NavLink>
-      <NavLink exact="true" activeclassname="active" className="portfolio-link" to="/my-work" onClick={toggleMenuClick}>
+      <NavLink exact="true" activeclassname="active" className="portfolio-link" to="/portfolio/my-work" onClick={toggleMenuClick}>
         <FontAwesomeIcon icon={faCode} />
       </NavLink>
-      <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" onClick={toggleMenuClick}>
+      <NavLink exact="true" activeclassname="active" className="contact-link" to="/portfolio/contact" onClick={toggleMenuClick}>
         <FontAwesomeIcon icon={faEnvelope} />
       </NavLink>
     </nav>
