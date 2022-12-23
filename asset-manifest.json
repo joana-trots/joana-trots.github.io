@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c43b62fe.css",
+    "main.css": "/portfolio/static/css/main.8cb78e1f.css",
     "main.js": "/portfolio/static/js/main.4a261be0.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/loremipsum.net-landing-page.png": "/portfolio/static/media/loremipsum.net-landing-page.79fa3065c89c0f8d0801.png",
@@ -20,12 +20,12 @@
     "static/media/interactive-rating-component.png": "/portfolio/static/media/interactive-rating-component.11842ba0399e5ab51eac.png",
     "static/media/logo-colorful.svg": "/portfolio/static/media/logo-colorful.51b454aa0b3f099d2145a67e783e3d57.svg",
     "index.html": "/portfolio/index.html",
-    "main.c43b62fe.css.map": "/portfolio/static/css/main.c43b62fe.css.map",
+    "main.8cb78e1f.css.map": "/portfolio/static/css/main.8cb78e1f.css.map",
     "main.4a261be0.js.map": "/portfolio/static/js/main.4a261be0.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c43b62fe.css",
+    "static/css/main.8cb78e1f.css",
     "static/js/main.4a261be0.js"
   ]
 }
