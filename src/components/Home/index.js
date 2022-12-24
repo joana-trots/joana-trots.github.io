@@ -29,11 +29,11 @@ const Home = () => {
                         <AnimatedLetters letterClass={letterClass} 
                         srtArray={jobArray2} idx={37}></AnimatedLetters>
                     </h2>
-                    <Link to="/contact" className="btn cv-button">
+                    <a href='/portfolio/CV_JoanaTrots.pdf' className="btn cv-button" download title='download pdf'>
                         CV&nbsp;
                         <FontAwesomeIcon icon={faDownload} />
-                    </Link>
-                    <Link to="/contact" className="btn contact-button">
+                    </a>
+                    <Link to="/portfolio/contact" className="btn contact-button">
                         Contact me
                     </Link>
                 </div>

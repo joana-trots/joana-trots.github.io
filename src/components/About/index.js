@@ -7,6 +7,7 @@ import { useState } from 'react'
 import aboutCover from '../../assets/images/about-cover.png'
 import Loader from 'react-loaders'
 
+
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     return (
@@ -27,17 +28,17 @@ const About = () => {
                         </div>
                         <div className='about-section__right-side'>
                             <div className='cv-block'>
-                                <a>
+                                <a href='/portfolio/CV_JoanaTrots.pdf' download>
                                     <span className='caption'>Learn more</span>
                                     <span className='par'>You can see my hard & soft skills, education and work background right in my CV</span>
                                     <FontAwesomeIcon icon={ faArrowRight } className='arrow-link' />
                                 </a>
                             </div>
-                            <img src={aboutCover}></img>
+                            <img src={aboutCover} alt='about cover'></img>
                         </div>
                     </div>
                     <div className='portfolio-block'>
-                        <Link to="/portfolio">
+                        <Link to="/portfolio/my-work">
                             <span className='caption'>Portfolio</span>
                             <h3>Take a look at my work</h3>
                             <span className='par'>Development and design solutions</span>
