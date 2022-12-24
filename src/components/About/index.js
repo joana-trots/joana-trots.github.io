@@ -46,20 +46,20 @@ const About = () => {
                         </Link>
                     </div>
                     <div className='skills-block'>
-                        <a>
+                        <Link to='/portfolio/cv'>
                             <span className='caption'>Blog</span>
                             <h3>All about my professional life</h3>
                             <span className='par'>Tips & tricks, achievements and insights</span>
                             <FontAwesomeIcon icon={ faArrowRight } className='arrow-link' />
-                        </a>
+                        </Link>
                     </div>
                     <div className='roadmap-block'>
-                        <a>
+                        <Link to='/portfolio/roadmap'>
                             <span className='caption'>Roadmap</span>
                             <h3>My growth and learning plan</h3>
                             <span className='par'>See my roadmap</span>
                             <FontAwesomeIcon icon={ faArrowRight } className='arrow-link' />
-                        </a>
+                        </Link>
                     </div>
                     
                 </div>

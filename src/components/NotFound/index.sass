@@ -1,0 +1,26 @@
+@import '../layout/responsive.scss'
+
+.notfound-page
+    height: 100vh
+    width: 100vw
+    &__text-zone
+        height: 100vh
+        width: 100vw
+        background: url("../../assets/images/notfound_bg.svg")
+        background-repeat: no-repeat
+        background-position: left center
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        @include media("<=phone")
+            background-position: center
+        h1, p, .links
+            margin-left: 190px
+            max-width: 500px
+            width: auto
+            @include media("<=tablet")
+                margin-left: 10vw
+                text-align: left
+
+       

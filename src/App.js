@@ -5,6 +5,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
+import NotFound from './components/NotFound/NotFfound';
 
 function App() {  
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path='/portfolio/about' element={<About />}></Route>
       <Route path='/portfolio/contact' element={<Contact />}></Route>
       <Route path='/portfolio/my-work' element={<Portfolio />}></Route>
+      <Route path='*' element={<NotFound />}/>
     </Route>
    </Routes>
   );
