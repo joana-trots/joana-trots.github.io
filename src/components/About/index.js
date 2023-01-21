@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './index.sass'
-import { faArrowRight, faLocationDot, faCertificate} from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faLocationDot} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import AnimatedLetters from '../AnimatedLetters'
 import { useState } from 'react'
@@ -50,7 +50,7 @@ const About = () => {
                         </Link>
                     </div>
                     <div className='skills-block'>
-                    <span className='badge new'><FontAwesomeIcon icon={ faCertificate } /></span>
+                    <span className='badge new'></span>
                         <Link to='/portfolio/cv'>
                             <span className='caption'>Blog</span>
                             <h3>All about my professional life</h3>
@@ -59,7 +59,7 @@ const About = () => {
                         </Link>
                     </div>
                     <div className='roadmap-block'>
-                    <span className='badge soon'><FontAwesomeIcon icon={ faCertificate } /></span>
+                    <span className='badge soon'></span>
                         <Link to='/portfolio/roadmap'>
                             <span className='caption'>Roadmap</span>
                             <h3>My growth and learning plan</h3>
