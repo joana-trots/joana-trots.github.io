@@ -11,7 +11,7 @@ import img_06 from '../../../../assets/images/portfolio/interactive-rating-compo
 import img_07 from '../../../../assets/images/portfolio/product-preview-card-component.png'
 import img_08 from '../../../../assets/images/portfolio/article-preview-component.png'
 import img_09 from '../../../../assets/images/portfolio/landie.png'
-import img_10 from '../../../../assets/images/portfolio/mars-once-application-form.png'
+import img_10 from '../../../../assets/images/portfolio/mars-one-application-form.png'
 import img_11 from '../../../../assets/images/portfolio/responsive-prototype-with-grids.png'
 import img_12 from '../../../../assets/images/portfolio/mobile-poker.png'
 
@@ -56,14 +56,14 @@ export default [
     },
     {
         id: 10,
-        url: "https://joana-trots.github.io/mars-once-application-form/",
+        url: "https://joana-trots.github.io/mars-one-application-form/",
         img_src: img_10,
-        title: "Beautiful Application Form for Mars Once Mission",
+        title: "Beautiful Application Form for Mars One Mission",
         description: "This is a beautiful Application Form with custom styles, validation and parallax effect",
         tags: [<span className='tag'>Frontend</span>, <span className='tag'>HTML/CSS</span>, <span className='tag'>SASS</span>, <span className='tag'>JavaScript</span>, <span className='tag'>jQuery</span>, <span className='tag'>Form validation</span>, <span className='tag'>Parallax</span>],
         links: [
-            <a href="https://github.com/joana-trots/mars-once-application-form" target="_blank" title="See Github repository" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>,
-            <a href="https://joana-trots.github.io/mars-once-application-form/" target="_blank" title="See Live project" rel="noreferrer"><FontAwesomeIcon icon={faEye} /></a>
+            <a href="https://github.com/joana-trots/mars-one-application-form" target="_blank" title="See Github repository" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>,
+            <a href="https://joana-trots.github.io/mars-one-application-form/" target="_blank" title="See Live project" rel="noreferrer"><FontAwesomeIcon icon={faEye} /></a>
         ]
     },
     {

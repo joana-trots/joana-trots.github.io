@@ -4,6 +4,7 @@ $light-pink: #f3a7ff
 $purple: #9d1bff
 $yellow: #FFCC70
 $black: #333333
+$gray: #737373
 $primer-gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)
 $white-gradient: linear-gradient(to top, #dfe9f3 0%, white 100%)
 $purple-gradient: linear-gradient(130deg, #121676, #b200d0)
@@ -30,6 +31,7 @@ $yellow-gradient: linear-gradient(300deg, #f6d365 0%, #fda085 100%)
         border-radius: 25px
         background: rgba(51, 51, 51, 0.16)
         overflow: auto
+        overflow-x: hidden
         @include media("<=desktop")
             display: flex
             flex-wrap: wrap
@@ -71,9 +73,13 @@ $yellow-gradient: linear-gradient(300deg, #f6d365 0%, #fda085 100%)
                             animation-delay: 1.5s
                         &:nth-of-type(4)
                             animation-delay: 1.7s
-                            
                         @include media("<1200px")
                             padding-right: 0
+                    .location
+                        span
+                            margin-right: 20px
+                        &__dot
+                            color: $purple
                 &__right-side
                     width: 75%
                     background: $purple-gradient
@@ -104,7 +110,6 @@ $yellow-gradient: linear-gradient(300deg, #f6d365 0%, #fda085 100%)
                 opacity: 0
                 animation: fadeIn 2s 1s forwards
                 cursor: pointer
-
                 p, .par, .caption
                     @include media(">=desktop", "<=1330px")
                         font-size: 14px
@@ -119,10 +124,7 @@ $yellow-gradient: linear-gradient(300deg, #f6d365 0%, #fda085 100%)
                     @include media("<1200px")
                         color: $black
                         display: block
-                &:hover .arrow-link
-                    animation: headShake 2s
-                    display: block
-                    color: $white
+                
                 &:not(.cv-block)
                     background-image: $white-gradient
                     color: $black
@@ -146,6 +148,55 @@ $yellow-gradient: linear-gradient(300deg, #f6d365 0%, #fda085 100%)
                             color: $white
                         &::before
                             opacity: 1
+                .badge
+                    position: absolute
+                    right: -10px
+                    top: -10px
+                    font-size: 70px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    transform: scale(.8) translateX(10px) translateY(-10px) rotate(10deg)
+                    transition: all .5s
+                    svg
+                        background: $yellow-gradient 
+                        -webkit-background-clip: text
+                        -webkit-text-fill-color: transparent
+                    &.soon
+                        color: $gray
+                        &::before
+                            content: "SOON"
+                            color: $white
+                            font-size: 11px
+                            font-weight: 600
+                            position: absolute 
+                    &.new
+                        color: $yellow
+                        //animation: rotating 2s linear infinite
+                        
+                        &::before
+                            content: "NEW"
+                            color: $black
+                            font-size: 11px
+                            font-weight: 600
+                            position: absolute
+                        &::after
+                            content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"%3E%3Cpath d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" fill="%239d1bff"/%3E%3C/svg%3E')
+                            width: 80px
+                            position: absolute
+                            z-index: -1
+                            
+                &:hover 
+                    .arrow-link
+                        animation: headShake 2s
+                        display: block
+                        color: $white  
+                    .badge
+                        transform: scale(1) rotate(15deg)
+                        
+
+                        
+                        
             &.cv-block
                 margin: 70px 50px
                 background-color: rgba(237, 237, 237, 0.05) 
@@ -173,3 +224,10 @@ $yellow-gradient: linear-gradient(300deg, #f6d365 0%, #fda085 100%)
                 animation-delay: 3s
     h1
         color: $black
+
+
+@-webkit-keyframes rotating
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)

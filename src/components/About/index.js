@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './index.sass'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faLocationDot, faCertificate} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import AnimatedLetters from '../AnimatedLetters'
 import { useState } from 'react'
@@ -21,6 +21,10 @@ const About = () => {
                                 srtArray={['A', 'b', 'o', 'u', 't', '','', 'm', 'e']} 
                                 idx={1}></AnimatedLetters>
                             </h1>
+                            <p className='location'>
+                                <span><FontAwesomeIcon icon={ faLocationDot } className='location__dot'/> Belarus</span> 
+                                <span><FontAwesomeIcon icon={ faLocationDot } className='location__dot'/> Poland</span>
+                            </p>
                             <p>I&rsquo;m an&nbsp;ambitious frontend developer with a&nbsp;good sense of&nbsp;beauty&nbsp;🤩 and willingness to develop amazing user experiences. I&rsquo;m really passionate about creating nice and stunning products with a&nbsp;clean code. Currently learning React and UX/UI. </p>
                             <p>Contributing to the design and development of web based user interfaces, working with the latest tools and cutting-edge web technologies - are the most important things I rely on when choosing a dream job.</p>
                             <p>I would like to be a part of a professional team that takes pride in its craft and ship expertly engineered UIs.</p>
@@ -46,6 +50,7 @@ const About = () => {
                         </Link>
                     </div>
                     <div className='skills-block'>
+                    <span className='badge new'><FontAwesomeIcon icon={ faCertificate } /></span>
                         <Link to='/portfolio/cv'>
                             <span className='caption'>Blog</span>
                             <h3>All about my professional life</h3>
@@ -54,6 +59,7 @@ const About = () => {
                         </Link>
                     </div>
                     <div className='roadmap-block'>
+                    <span className='badge soon'><FontAwesomeIcon icon={ faCertificate } /></span>
                         <Link to='/portfolio/roadmap'>
                             <span className='caption'>Roadmap</span>
                             <h3>My growth and learning plan</h3>
