@@ -41,33 +41,34 @@ const About = () => {
                             <img src={aboutCover} alt='about cover'></img>
                         </div>
                     </div>
-                    <div className='portfolio-block'>
-                        <Link to="/portfolio/my-work">
+                    
+                    <Link to="/portfolio/my-work" className='portfolio-block'>
+                        <div>
                             <span className='caption'>Portfolio</span>
                             <h3>Take a look at my work</h3>
                             <span className='par'>Development and design solutions</span>
                             <FontAwesomeIcon icon={ faArrowRight } className='arrow-link' />
-                        </Link>
-                    </div>
-                    <div className='skills-block'>
-                    <span className='badge new'></span>
-                        <Link to='/portfolio/cv'>
+                        </div>
+                    </Link>
+                    
+                    <Link to='/portfolio/blog' className='blog-block'>
+                        <div>
+                            <span className='badge soon'></span>
                             <span className='caption'>Blog</span>
                             <h3>All about my professional life</h3>
                             <span className='par'>Tips & tricks, achievements and insights</span>
                             <FontAwesomeIcon icon={ faArrowRight } className='arrow-link' />
-                        </Link>
-                    </div>
-                    <div className='roadmap-block'>
-                    <span className='badge soon'></span>
-                        <Link to='/portfolio/roadmap'>
+                        </div>
+                    </Link>
+                    <Link to='/portfolio/roadmap' className='roadmap-block'>
+                        <div>
+                            <span className='badge soon'></span>
                             <span className='caption'>Roadmap</span>
                             <h3>My growth and learning plan</h3>
                             <span className='par'>See my roadmap</span>
                             <FontAwesomeIcon icon={ faArrowRight } className='arrow-link' />
-                        </Link>
-                    </div>
-                    
+                        </div>
+                    </Link>
                 </div>
             </div>
             <Loader type="ball-scale-ripple-multiple" />

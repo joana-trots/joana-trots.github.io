@@ -4,6 +4,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useState } from 'react'
 import Loader from 'react-loaders'
 import emailjs from '@emailjs/browser'
+import qr from '../../assets/images/qr-code.png'
 
 const Contact = () => {
     
@@ -34,7 +35,7 @@ const Contact = () => {
                     idx={1}
                     letterClass={letterClass} />
                 </h1>
-                <span className={responsed ? 'caption display-none' : 'caption'}>I reply very quickly!</span>
+                <span className={responsed ? 'caption display-none' : 'caption'}>I'm looking for a role in established IT company with the opportunity to work with the latest technologies. However, if you have other request or question, don't hesitate to contact me using below form either.</span>
                 <form id="contact-form" className={responsed ? 'contact-form display-none' : 'contact-form'} onSubmit={sendEmail}>
                     <div>
                         <label htmlFor='name'>Name</label>
@@ -55,7 +56,9 @@ const Contact = () => {
                 </form>
             </div>
             <div className='contact-page__cover-zone'>
-                <p>I'm looking for a role in established IT company with the opportunity to work with the latest technologies. However, if you have other request or question, don't hesitate to contact me using below form either.</p>
+                <p>
+                    <img width='100%' src={qr}/>
+                </p>
             </div>
        </div>
        <Loader type='ball-scale-ripple-multiple'/>

@@ -1,14 +1,18 @@
+@import '../layout/responsive.scss'
+
 .text-animate
     display: inline-block
     opacity: 0
     min-width: 10px
+    @include media("<=phone")
+        min-width: 7px
 
 @for $i from 1 through 16
     .text-animate._#{$i}
         animation: bounceIn 1s 1s forwards
-        animation-delay: #{1+ ($i / 10)}s
+        animation-delay: #{1 + calc($i / 10)}s
 
 @for $i from 17 through 50
     .text-animate._#{$i}
         animation: bounceIn 1s 2s forwards
-        animation-delay: #{2 + ($i / 20)}s
+        animation-delay: #{2 + calc($i / 20)}s

@@ -1,35 +1,49 @@
 @import ../layout/responsive.scss
 
 $white: #ededed
-$pink: #a03757
 $light-pink: #f3a7ff
 $yellow: #ffc200
+$black: #1c1c1c
+$transparent-dark: rgba(51, 51, 51, 0.16)
 $primer-gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)
 .home-page
-    background-image: $primer-gradient
     &__cover-img
-        background-image:  url('../../assets/images/cover.png')
+        background-image:  url('../../assets/images/cover1.png')
         width: 100%
         height: 65vh
-        max-height: 500px
         background-position: bottom right
         background-size: contain
         background-repeat: no-repeat
         position: absolute
         bottom: 0
-        right: 5vw
-        @include media("<=tablet")
-            height: 100%
-            right: -20vw
+        right: 8vw
+        @include media("<=desktop")
+            height: 40vw
         @include media("<=phone")
-            width: 135%
-            right: -60%
+            height: 100%
     &__text-zone
-        position: absolute
-        top: 44%
         padding-left: 190px
-        transform: translateY(-50%)
-        max-height: 90%
+        @include media("<=tablet")
+            padding-left: 40px
+        .caption
+            position: absolute
+            margin-top: 0
+            top: 0
+            color: #ededed24
+            text-transform: uppercase
+            letter-spacing: 0.175em
+            font-size: 20vw
+            line-height: 1 
+            @include media("<=tablet")
+                padding-top: 10vh
+        h1
+            color: $yellow
+            font-size: 120px
+            font-weight: 800
+            letter-spacing: .1vw
+            text-shadow: 10px 10px 0 $black
+            margin-top: 17vh
+            text-align: left
         .cv-button, 
         .contact-button
             transition: all .5s
@@ -37,17 +51,18 @@ $primer-gradient: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)
             animation: bounceIn 1s 5s forwards
         .contact-button
             animation-delay: 5.4s
-        @include media("<=tablet")
-            padding-left: 10vw
+
+        @include media("<=desktop")
             h1
-                text-align: left
+                font-size: 10vw
+            h2
+                font-size: 80px
         @include media("<=phone")
-            width: 340px
-            padding: 0
-            margin: auto
-            position: relative
-            transform: none
-            top: 20vh
+            h1
+                font-size: 40px
+                text-shadow: 5px 5px 0 $black
+            h2
+                font-size: 40px
 
             
             

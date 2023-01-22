@@ -4,7 +4,7 @@ import '../../App.sass'
 import Logo from '../../assets/images/logo-colorful.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser, faCode } from '@fortawesome/free-solid-svg-icons'
-import { faBehance, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faBehance, faGithub, faInstagram, faLinkedin, faTelegram } from '@fortawesome/free-brands-svg-icons'
 import { useState } from 'react'
 
 const Navbar = () => {
@@ -42,6 +42,11 @@ const Navbar = () => {
       <li>
         <a target="_blank" rel="noreferrer" href="https://github.com/joana-trots/">
           <FontAwesomeIcon icon={faGithub} />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" rel="noreferrer" href="https://t.me/ave_jojo">
+          <FontAwesomeIcon icon={faTelegram} />
         </a>
       </li>
       {/* <li>
