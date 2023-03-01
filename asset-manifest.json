@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.767421c3.css",
-    "main.js": "/portfolio/static/js/main.474e193f.js",
+    "main.css": "/portfolio/static/css/main.57e772df.css",
+    "main.js": "/portfolio/static/js/main.3bc7eacc.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/loremipsum.net-landing-page.png": "/portfolio/static/media/loremipsum.net-landing-page.79fa3065c89c0f8d0801.png",
     "static/media/bg.jpg": "/portfolio/static/media/bg.c1433064a73e97499e8f.jpg",
     "static/media/about-cover.png": "/portfolio/static/media/about-cover.e797ef43dff07c4f7c55.png",
+    "static/media/glassmorphism-main-screen.png": "/portfolio/static/media/glassmorphism-main-screen.aeb7662d720e843516d4.png",
     "static/media/mars-one-application-form.png": "/portfolio/static/media/mars-one-application-form.991575dc38a1c57e669d.png",
     "static/media/cover1.png": "/portfolio/static/media/cover1.b261c2659814b45af78c.png",
     "static/media/product-preview-card-component.png": "/portfolio/static/media/product-preview-card-component.aac52affd60648530e41.png",
@@ -14,7 +15,9 @@
     "static/media/manao-landing-page.png": "/portfolio/static/media/manao-landing-page.38064005cb02082c2d43.png",
     "static/media/landie.png": "/portfolio/static/media/landie.abaf76b42bbe4e13b8ab.png",
     "static/media/sunnyside-agency-landing-page.jpg": "/portfolio/static/media/sunnyside-agency-landing-page.c05b1d070175860479ac.jpg",
+    "static/media/go-yandexru.jpg": "/portfolio/static/media/go-yandexru.ff284bd5e8a648d08d02.jpg",
     "static/media/base-apparel-page.jpg": "/portfolio/static/media/base-apparel-page.4ef9177b59a25f8492f1.jpg",
+    "static/media/adinc-logo-concept.png": "/portfolio/static/media/adinc-logo-concept.0aad5ab3d284c854cc87.png",
     "static/media/responsive-prototype-with-grids.png": "/portfolio/static/media/responsive-prototype-with-grids.a25056d6142410d364c0.png",
     "static/media/nft-card-preview-component.png": "/portfolio/static/media/nft-card-preview-component.f4cccba3640b5562b583.png",
     "static/media/mobile-poker.png": "/portfolio/static/media/mobile-poker.294d15efaef1f34aa7b1.png",
@@ -26,12 +29,12 @@
     "static/media/notfound_bg_part2.svg": "/portfolio/static/media/notfound_bg_part2.f0e91908d0cb2b0d54f25fe127153731.svg",
     "static/media/notfound_bg_part3.svg": "/portfolio/static/media/notfound_bg_part3.832ea446917c728f63db584b726454b4.svg",
     "static/media/notfound_bg_part4.svg": "/portfolio/static/media/notfound_bg_part4.1a9b43a3dab474c446a715b0f2df1217.svg",
-    "main.767421c3.css.map": "/portfolio/static/css/main.767421c3.css.map",
-    "main.474e193f.js.map": "/portfolio/static/js/main.474e193f.js.map",
+    "main.57e772df.css.map": "/portfolio/static/css/main.57e772df.css.map",
+    "main.3bc7eacc.js.map": "/portfolio/static/js/main.3bc7eacc.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.767421c3.css",
-    "static/js/main.474e193f.js"
+    "static/css/main.57e772df.css",
+    "static/js/main.3bc7eacc.js"
   ]
 }
