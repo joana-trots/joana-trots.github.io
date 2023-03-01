@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './index.sass'
-import { faArrowRight, faLocationDot} from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faLocationDot, faGlobe, faSeedling } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import AnimatedLetters from '../AnimatedLetters'
 import { useState } from 'react'
@@ -24,8 +24,10 @@ const About = () => {
                             <p className='location'>
                                 <span><FontAwesomeIcon icon={ faLocationDot } className='location__dot'/> Belarus</span> 
                                 <span><FontAwesomeIcon icon={ faLocationDot } className='location__dot'/> Poland</span>
+                                <span><FontAwesomeIcon icon={ faGlobe } className='location__dot'/> Remote</span>
                             </p>
-                            <p>I&rsquo;m an&nbsp;ambitious frontend developer with a&nbsp;good sense of&nbsp;beauty&nbsp;🤩 and willingness to develop amazing user experiences. I&rsquo;m really passionate about creating nice and stunning products with a&nbsp;clean code. Currently learning React and UX/UI. </p>
+                            <p className='highlight-text'>Stack: HTML/CSS, LESS, SCSS, Javascript, jQuery, React, Gulp, Figma, Photoshop, GIT</p>
+                            <p>I&rsquo;m an&nbsp;ambitious frontend developer with a&nbsp;good sense of&nbsp;beauty&nbsp;🤩 and willingness to develop amazing user experiences. I&rsquo;m really passionate about creating nice and stunning products with a&nbsp;clean code.</p>
                             <p>Contributing to the design and development of web based user interfaces, working with the latest tools and cutting-edge web technologies - are the most important things I rely on when choosing a dream job.</p>
                             <p>I would like to be a part of a professional team that takes pride in its craft and ship expertly engineered UIs.</p>
                             <p>I'm exited to try new things and always ready for challenges&nbsp;🤘&nbsp;💪</p>

@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faFigma } from '@fortawesome/free-brands-svg-icons'
 
 import img_01 from '../../../../assets/images/portfolio/nft-card-preview-component.png'
 import img_02 from '../../../../assets/images/portfolio/sunnyside-agency-landing-page.jpg'
@@ -14,11 +14,34 @@ import img_09 from '../../../../assets/images/portfolio/landie.png'
 import img_10 from '../../../../assets/images/portfolio/mars-one-application-form.png'
 import img_11 from '../../../../assets/images/portfolio/responsive-prototype-with-grids.png'
 import img_12 from '../../../../assets/images/portfolio/mobile-poker.png'
-
+import img_13 from '../../../../assets/images/portfolio/adinc-logo-concept.png'
+import img_14 from '../../../../assets/images/portfolio/glassmorphism-main-screen.png'
+import img_15 from '../../../../assets/images/portfolio/go-yandexru.jpg'
 
 export default [
     {
-        id: 1,
+        id: 14,
+        url: "https://www.figma.com/file/4xXcIyJbCfKcbV3Zw8NGm6/glass-ui-design?node-id=1%3A2&t=DfgMtiYgLGzRamZm-1",
+        img_src: img_14,
+        title: "Main screen with glassmorphism effect",
+        tags: [<span className='tag'>Web Design</span>, <span className='tag'>Figma</span>, <span className='tag'>Glassmorphism</span>],
+        links: [
+            <a href="https://www.figma.com/file/4xXcIyJbCfKcbV3Zw8NGm6/glass-ui-design?node-id=1%3A2&t=DfgMtiYgLGzRamZm-1" target="_blank" title="See in Figma" rel="noreferrer"><FontAwesomeIcon icon={faFigma} /></a>,
+        ]
+    },
+    {
+        id: 13,
+        url: "https://www.figma.com/file/fpMDBw5jTcXZp0lL3H51HB/Ad.Inc?node-id=110%3A180&t=J2NmhjRVogsbzckB-1",
+        img_src: img_13,
+        title: "Quick Logo concept design process",
+        description: ["This is a logo concept for digital marketing agency AD.Inc. It was made very quickly (within 1 hour) with an explanation of style, colors and typography.", <br />, "Dealing with deadlines like a pro 🔥"],
+        tags: [<span className='tag'>Web Design</span>, <span className='tag'>Figma</span>, <span className='tag'>Logo</span>, <span className='tag'>Neubrutalism</span>, <span className='tag'>Oblique plugin</span>],
+        links: [
+            <a href="https://www.figma.com/file/fpMDBw5jTcXZp0lL3H51HB/Ad.Inc?node-id=110%3A180&t=J2NmhjRVogsbzckB-1" target="_blank" title="See in Figma" rel="noreferrer"><FontAwesomeIcon icon={faFigma} /></a>,
+        ]
+    },
+    {
+        id: 12,
         url: "https://joana-trots.github.io/base-apparel-coming-soon-page/",
         img_src: img_05,
         title: "Base Apparel - Coming Soon Page",
@@ -30,7 +53,7 @@ export default [
         ]
     },
     {
-        id: 2,
+        id: 11,
         url: "https://joana-trots.github.io/sunnyside-agency-landing-page/",
         img_src: img_02,
         title: "Sunnyside Agency Landing Page",
@@ -43,7 +66,7 @@ export default [
     },
     
     {
-        id: 3, 
+        id: 10, 
         url: "https://joana-trots.github.io/landie/",
         img_src: img_09,
         title: "Product Landing Page",
@@ -55,7 +78,7 @@ export default [
         ]
     },
     {
-        id: 10,
+        id: 9,
         url: "https://joana-trots.github.io/mars-one-application-form/",
         img_src: img_10,
         title: "Beautiful Application Form for Mars One Mission",
@@ -67,7 +90,7 @@ export default [
         ]
     },
     {
-        id: 4,
+        id: 8,
         url: "https://joana-trots.github.io/product-preview-card-component/",
         img_src: img_07,
         title: "Product Preview Card component",
@@ -78,7 +101,7 @@ export default [
         ]
     },
     {
-        id: 5,
+        id: 7,
         url: "https://joana-trots.github.io/manao-landing-page/",
         img_src: img_04,
         title: "MANAO Landing Page",
@@ -101,7 +124,7 @@ export default [
         ]
     },
     {
-        id: 7,
+        id: 5,
         url: "https://joana-trots.github.io/nft-card/",
         img_src: img_01,
         title: "NFT Preview card component",
@@ -113,7 +136,7 @@ export default [
         ]
     },
     {
-        id: 8,
+        id: 4,
         url: "https://joana-trots.github.io/interactive-rating-component/",
         img_src: img_06,
         title: "Interactive rating component",
@@ -125,7 +148,17 @@ export default [
         ]
     },
     {
-        id: 9,
+        id: 15,
+        url: "https://go.yandex/ru_ru/lp/rides/scooter",
+        img_src: img_15,
+        title: "Promo Page for YandexGo",
+        tags: [<span className='tag'>Frontend</span>, <span className='tag'>Tilda</span>, <span className='tag'>Zero blocks</span>, <span className='tag'>HTML/CSS</span>, <span className='tag'>Flexbox</span>, <span className='tag'>Flickity plugin</span>, <span className='tag'>Responsive</span>],
+        links: [
+            <a href="https://go.yandex/ru_ru/lp/rides/scooter" target="_blank" title="See Live project" rel="noreferrer"><FontAwesomeIcon icon={faEye} /></a>
+        ]
+    },
+    {
+        id: 3,
         url: "https://joana-trots.github.io/article-preview-component/",
         img_src: img_08,
         title: "Article Preview component",
@@ -138,7 +171,7 @@ export default [
     },
     
     {
-        id: 11,
+        id: 2,
         url: "https://joana-trots.github.io/responsive-prototype-with-grids/",
         img_src: img_11,
         title: "Responsive Prototype with Grids",
@@ -150,7 +183,7 @@ export default [
         ]
     },
     {
-        id: 12,
+        id: 1,
         url: "https://joana-trots.github.io/mobile-poker/",
         img_src: img_12,
         title: "Mobile Poker App - Personal account",
