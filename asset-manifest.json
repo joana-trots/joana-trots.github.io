@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.57e772df.css",
-    "main.js": "/portfolio/static/js/main.3bc7eacc.js",
+    "main.css": "/portfolio/static/css/main.6815b3d5.css",
+    "main.js": "/portfolio/static/js/main.26b0ab7c.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/loremipsum.net-landing-page.png": "/portfolio/static/media/loremipsum.net-landing-page.79fa3065c89c0f8d0801.png",
     "static/media/bg.jpg": "/portfolio/static/media/bg.c1433064a73e97499e8f.jpg",
     "static/media/about-cover.png": "/portfolio/static/media/about-cover.e797ef43dff07c4f7c55.png",
     "static/media/glassmorphism-main-screen.png": "/portfolio/static/media/glassmorphism-main-screen.aeb7662d720e843516d4.png",
+    "static/media/linkedin-banner.png": "/portfolio/static/media/linkedin-banner.0302a6fee3448eff8b7d.png",
     "static/media/mars-one-application-form.png": "/portfolio/static/media/mars-one-application-form.991575dc38a1c57e669d.png",
     "static/media/cover1.png": "/portfolio/static/media/cover1.b261c2659814b45af78c.png",
     "static/media/product-preview-card-component.png": "/portfolio/static/media/product-preview-card-component.aac52affd60648530e41.png",
@@ -29,12 +30,12 @@
     "static/media/notfound_bg_part2.svg": "/portfolio/static/media/notfound_bg_part2.f0e91908d0cb2b0d54f25fe127153731.svg",
     "static/media/notfound_bg_part3.svg": "/portfolio/static/media/notfound_bg_part3.832ea446917c728f63db584b726454b4.svg",
     "static/media/notfound_bg_part4.svg": "/portfolio/static/media/notfound_bg_part4.1a9b43a3dab474c446a715b0f2df1217.svg",
-    "main.57e772df.css.map": "/portfolio/static/css/main.57e772df.css.map",
-    "main.3bc7eacc.js.map": "/portfolio/static/js/main.3bc7eacc.js.map",
+    "main.6815b3d5.css.map": "/portfolio/static/css/main.6815b3d5.css.map",
+    "main.26b0ab7c.js.map": "/portfolio/static/js/main.26b0ab7c.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.57e772df.css",
-    "static/js/main.3bc7eacc.js"
+    "static/css/main.6815b3d5.css",
+    "static/js/main.26b0ab7c.js"
   ]
 }
