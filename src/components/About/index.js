@@ -34,9 +34,9 @@ const About = () => {
                         </div>
                         <div className='about-section__right-side'>
                             <div className='cv-block'>
-                                <a href='/portfolio/CV_JoanaTrots.pdf' download>
+                                <a href='https://heavy-cocoa-dbf.notion.site/Joana-Trots-3aee967485a1499c91284d6d8e11a428' target='_blank' rel='noreferrer' title='CV | Notion'>
                                     <span className='caption'>Learn more</span>
-                                    <span className='par'>You can see my hard & soft skills, education and work background right in my CV</span>
+                                    <span className='par'>You can see my work background, skills and education right in my CV</span>
                                     <FontAwesomeIcon icon={ faArrowRight } className='arrow-link' />
                                 </a>
                             </div>

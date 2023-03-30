@@ -29,7 +29,7 @@ const Home = () => {
                         <AnimatedLetters letterClass={letterClass} 
                         srtArray={jobArray2} idx={37}></AnimatedLetters>
                     </h2>
-                    <a href='/portfolio/CV_JoanaTrots.pdf' className="btn cv-button" download title='download pdf'>
+                    <a href='/portfolio/CV_Joana.pdf' className="btn cv-button" download title='download pdf'>
                         CV&nbsp;
                         <FontAwesomeIcon icon={faDownload} />
                     </a>

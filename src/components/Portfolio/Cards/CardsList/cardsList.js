@@ -17,16 +17,18 @@ import img_12 from '../../../../assets/images/portfolio/mobile-poker.png'
 import img_13 from '../../../../assets/images/portfolio/adinc-logo-concept.png'
 import img_14 from '../../../../assets/images/portfolio/glassmorphism-main-screen.png'
 import img_15 from '../../../../assets/images/portfolio/go-yandexru.jpg'
+import img_16 from '../../../../assets/images/portfolio/linkedin-banner.png'
 
 export default [
     {
-        id: 14,
-        url: "https://www.figma.com/file/4xXcIyJbCfKcbV3Zw8NGm6/glass-ui-design?node-id=1%3A2&t=DfgMtiYgLGzRamZm-1",
-        img_src: img_14,
-        title: "Main screen with glassmorphism effect",
-        tags: [<span className='tag'>Web Design</span>, <span className='tag'>Figma</span>, <span className='tag'>Glassmorphism</span>],
+        id: 16,
+        url: "https://www.figma.com/file/YDUoW64PrgWhpT6uT8IeRW/linkedin-banner?node-id=9%3A31&t=K9VADKKqzMeUhBQz-1",
+        img_src: img_16,
+        title: "LinkedIn banner",
+        description: ["I made a banner for my friend just for fun 😎"],
+        tags: [<span className='tag'>Web Design</span>, <span className='tag'>Figma</span>],
         links: [
-            <a href="https://www.figma.com/file/4xXcIyJbCfKcbV3Zw8NGm6/glass-ui-design?node-id=1%3A2&t=DfgMtiYgLGzRamZm-1" target="_blank" title="See in Figma" rel="noreferrer"><FontAwesomeIcon icon={faFigma} /></a>,
+            <a href="https://www.figma.com/file/YDUoW64PrgWhpT6uT8IeRW/linkedin-banner?node-id=9%3A31&t=K9VADKKqzMeUhBQz-1" target="_blank" title="See in Figma" rel="noreferrer"><FontAwesomeIcon icon={faFigma} /></a>,
         ]
     },
     {
@@ -38,6 +40,16 @@ export default [
         tags: [<span className='tag'>Web Design</span>, <span className='tag'>Figma</span>, <span className='tag'>Logo</span>, <span className='tag'>Neubrutalism</span>, <span className='tag'>Oblique plugin</span>],
         links: [
             <a href="https://www.figma.com/file/fpMDBw5jTcXZp0lL3H51HB/Ad.Inc?node-id=110%3A180&t=J2NmhjRVogsbzckB-1" target="_blank" title="See in Figma" rel="noreferrer"><FontAwesomeIcon icon={faFigma} /></a>,
+        ]
+    },
+    {
+        id: 14,
+        url: "https://www.figma.com/file/4xXcIyJbCfKcbV3Zw8NGm6/glass-ui-design?node-id=1%3A2&t=DfgMtiYgLGzRamZm-1",
+        img_src: img_14,
+        title: "Main screen with glassmorphism effect",
+        tags: [<span className='tag'>Web Design</span>, <span className='tag'>Figma</span>, <span className='tag'>Glassmorphism</span>],
+        links: [
+            <a href="https://www.figma.com/file/4xXcIyJbCfKcbV3Zw8NGm6/glass-ui-design?node-id=1%3A2&t=DfgMtiYgLGzRamZm-1" target="_blank" title="See in Figma" rel="noreferrer"><FontAwesomeIcon icon={faFigma} /></a>,
         ]
     },
     {
@@ -64,7 +76,6 @@ export default [
             <a href="https://joana-trots.github.io/sunnyside-agency-landing-page/" target="_blank" title="See Live project" rel="noreferrer"><FontAwesomeIcon icon={faEye} /></a>
         ]
     },
-    
     {
         id: 10, 
         url: "https://joana-trots.github.io/landie/",
@@ -169,13 +180,12 @@ export default [
             <a href="https://joana-trots.github.io/article-preview-component/" target="_blank" title="See Live project" rel="noreferrer"><FontAwesomeIcon icon={faEye} /></a>
         ]
     },
-    
     {
         id: 2,
         url: "https://joana-trots.github.io/responsive-prototype-with-grids/",
         img_src: img_11,
         title: "Responsive Prototype with Grids",
-        description: "This is a Responsive Prototype of web page made with CSS Grids",
+        description: "This is a Responsive Prototype of web page showing how CSS Grids work",
         tags: [<span className='tag'>Frontend</span>, <span className='tag'>HTML/CSS</span>, <span className='tag'>Grids</span>, <span className='tag'>Responsive</span>],
         links: [
             <a href="https://github.com/joana-trots/responsive-prototype-with-grids" target="_blank" title="See Github repository" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>,
