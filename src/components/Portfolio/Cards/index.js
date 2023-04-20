@@ -7,7 +7,7 @@ const Cards = () => {
             <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 1024: 3}}>
                 <Masonry gutter='30px'>      
                     {
-                        items.map((item) => {
+                        items.map((item, i) => {
                             return (
                                 <div className='card' key={item.id}>
                                     <a href={item.url} target="_blank" title={item.title} rel="noreferrer">

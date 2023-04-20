@@ -18,8 +18,58 @@ import img_13 from '../../../../assets/images/portfolio/adinc-logo-concept.png'
 import img_14 from '../../../../assets/images/portfolio/glassmorphism-main-screen.png'
 import img_15 from '../../../../assets/images/portfolio/go-yandexru.jpg'
 import img_16 from '../../../../assets/images/portfolio/linkedin-banner.png'
+import img_17 from '../../../../assets/images/portfolio/boldo-blog.png'
+import img_18 from '../../../../assets/images/portfolio/logo-ceramy.png'
+import img_19 from '../../../../assets/images/portfolio/sale-banner-example.png'
+import img_20 from '../../../../assets/images/portfolio/flashsale-banner.png'
 
 export default [
+    {
+        id: 17,
+        url: "https://joana-trots.github.io/boldo-blog/",
+        img_src: img_17,
+        title: "Boldo Blog Landing page",
+        description: ["This is a responsive blog webpage"],
+        tags: [<span className='tag'>Frontend</span>, <span className='tag'>HTML/CSS</span>, <span className='tag'>jQuery</span>, <span className='tag'>SASS</span>, <span className='tag'>Responsive</span>, <span className='tag'>EmailJS</span> ],
+        links: [
+            <a href="https://github.com/joana-trots/boldo-blog" target="_blank" title="See Github repository" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>,
+            <a href="https://joana-trots.github.io/boldo-blog/" target="_blank" title="See Live project" rel="noreferrer"><FontAwesomeIcon icon={faEye} /></a>
+        ]
+    },
+    {
+        id: 20,
+        url: "https://www.figma.com/file/vjjgunDstwC3u85qrrIK3A/flash-sale?node-id=1%3A2&t=TKpSxnPJNSfNDelG-1",
+        img_src: img_20,
+        title: "Flash sale banner",
+        description: ["An example of a catchy modern Sale banner"],
+        tags: [<span className='tag'>Web Design</span>, <span className='tag'>Figma</span>, <span className='tag'>Banner</span>],
+        links: [
+            <a href="https://www.figma.com/file/vjjgunDstwC3u85qrrIK3A/flash-sale?node-id=1%3A2&t=TKpSxnPJNSfNDelG-1" target="_blank" title="See in Figma" rel="noreferrer"><FontAwesomeIcon icon={faFigma} /></a>
+        ]
+    },
+    {
+        id: 18,
+        url: "https://www.figma.com/file/crjnNz2POZGvuybLxcJ7H9/Logo-ceramy.by?node-id=2%3A208&t=jKA1r0H0GG8EUXHo-1",
+        img_src: img_18,
+        title: "Logo Process",
+        description: ["This is a demonstration of various examples of the Belarusian Tile Shop logo in Figma."],
+        tags: [<span className='tag'>Web Design</span>, <span className='tag'>Figma</span>, <span className='tag'>Logo</span>],
+        links: [
+            <a href="https://www.figma.com/file/crjnNz2POZGvuybLxcJ7H9/Logo-ceramy.by?node-id=2%3A208&t=jKA1r0H0GG8EUXHo-1" target="_blank" title="See in Figma" rel="noreferrer"><FontAwesomeIcon icon={faFigma} /></a>,
+            <a href="https://ceramy.by/" target="_blank" title="See Live website" rel="noreferrer"><FontAwesomeIcon icon={faEye} /></a>
+        ]
+    },
+    {
+        id: 19,
+        url: "https://www.figma.com/file/RHednIAmu1f8HuJCNPrbqB/banner-super-sale?node-id=4%3A18&t=TKpSxnPJNSfNDelG-1",
+        img_src: img_19,
+        title: "Super sale banner",
+        description: ["An example of a catchy modern Sale banner"],
+        tags: [<span className='tag'>Web Design</span>, <span className='tag'>Figma</span>, <span className='tag'>Banner</span>],
+        links: [
+            <a href="https://www.figma.com/file/RHednIAmu1f8HuJCNPrbqB/banner-super-sale?node-id=4%3A18&t=TKpSxnPJNSfNDelG-1" target="_blank" title="See in Figma" rel="noreferrer"><FontAwesomeIcon icon={faFigma} /></a>
+        ]
+    },
     {
         id: 16,
         url: "https://www.figma.com/file/YDUoW64PrgWhpT6uT8IeRW/linkedin-banner?node-id=9%3A31&t=K9VADKKqzMeUhBQz-1",
@@ -168,30 +218,30 @@ export default [
             <a href="https://go.yandex/ru_ru/lp/rides/scooter" target="_blank" title="See Live project" rel="noreferrer"><FontAwesomeIcon icon={faEye} /></a>
         ]
     },
-    {
-        id: 3,
-        url: "https://joana-trots.github.io/article-preview-component/",
-        img_src: img_08,
-        title: "Article Preview component",
-        description: "A tiny implementation of the share icon by three different ways, when clicked social media links appears - hover effect, checkbox method, JavaScript method",
-        tags: [<span className='tag'>Frontend</span>, <span className='tag'>HTML/CSS</span>, <span className='tag'>Javascript</span>, <span className='tag'>Responsive</span>],
-        links: [
-            <a href="https://github.com/joana-trots/article-preview-component/" target="_blank" title="See Github repository" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>,
-            <a href="https://joana-trots.github.io/article-preview-component/" target="_blank" title="See Live project" rel="noreferrer"><FontAwesomeIcon icon={faEye} /></a>
-        ]
-    },
-    {
-        id: 2,
-        url: "https://joana-trots.github.io/responsive-prototype-with-grids/",
-        img_src: img_11,
-        title: "Responsive Prototype with Grids",
-        description: "This is a Responsive Prototype of web page showing how CSS Grids work",
-        tags: [<span className='tag'>Frontend</span>, <span className='tag'>HTML/CSS</span>, <span className='tag'>Grids</span>, <span className='tag'>Responsive</span>],
-        links: [
-            <a href="https://github.com/joana-trots/responsive-prototype-with-grids" target="_blank" title="See Github repository" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>,
-            <a href="https://joana-trots.github.io/responsive-prototype-with-grids/" target="_blank" title="See Live project" rel="noreferrer"><FontAwesomeIcon icon={faEye} /></a>
-        ]
-    },
+    // {
+    //     id: 3,
+    //     url: "https://joana-trots.github.io/article-preview-component/",
+    //     img_src: img_08,
+    //     title: "Article Preview component",
+    //     description: "A tiny implementation of the share icon by three different ways, when clicked social media links appears - hover effect, checkbox method, JavaScript method",
+    //     tags: [<span className='tag'>Frontend</span>, <span className='tag'>HTML/CSS</span>, <span className='tag'>Javascript</span>, <span className='tag'>Responsive</span>],
+    //     links: [
+    //         <a href="https://github.com/joana-trots/article-preview-component/" target="_blank" title="See Github repository" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>,
+    //         <a href="https://joana-trots.github.io/article-preview-component/" target="_blank" title="See Live project" rel="noreferrer"><FontAwesomeIcon icon={faEye} /></a>
+    //     ]
+    // },
+    // {
+    //     id: 2,
+    //     url: "https://joana-trots.github.io/responsive-prototype-with-grids/",
+    //     img_src: img_11,
+    //     title: "Responsive Prototype with Grids",
+    //     description: "This is a Responsive Prototype of web page showing how CSS Grids work",
+    //     tags: [<span className='tag'>Frontend</span>, <span className='tag'>HTML/CSS</span>, <span className='tag'>Grids</span>, <span className='tag'>Responsive</span>],
+    //     links: [
+    //         <a href="https://github.com/joana-trots/responsive-prototype-with-grids" target="_blank" title="See Github repository" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>,
+    //         <a href="https://joana-trots.github.io/responsive-prototype-with-grids/" target="_blank" title="See Live project" rel="noreferrer"><FontAwesomeIcon icon={faEye} /></a>
+    //     ]
+    // },
     {
         id: 1,
         url: "https://joana-trots.github.io/mobile-poker/",

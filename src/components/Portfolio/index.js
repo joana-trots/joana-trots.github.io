@@ -1,11 +1,8 @@
 import './index.sass'
 import AnimatedLetters from '../AnimatedLetters'
 import Cards from './Cards'
-
 import { useState } from 'react'
 import Loader from 'react-loaders'
-
-
 
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
