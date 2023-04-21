@@ -218,30 +218,30 @@ export default [
             <a href="https://go.yandex/ru_ru/lp/rides/scooter" target="_blank" title="See Live project" rel="noreferrer"><FontAwesomeIcon icon={faEye} /></a>
         ]
     },
-    // {
-    //     id: 3,
-    //     url: "https://joana-trots.github.io/article-preview-component/",
-    //     img_src: img_08,
-    //     title: "Article Preview component",
-    //     description: "A tiny implementation of the share icon by three different ways, when clicked social media links appears - hover effect, checkbox method, JavaScript method",
-    //     tags: [<span className='tag'>Frontend</span>, <span className='tag'>HTML/CSS</span>, <span className='tag'>Javascript</span>, <span className='tag'>Responsive</span>],
-    //     links: [
-    //         <a href="https://github.com/joana-trots/article-preview-component/" target="_blank" title="See Github repository" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>,
-    //         <a href="https://joana-trots.github.io/article-preview-component/" target="_blank" title="See Live project" rel="noreferrer"><FontAwesomeIcon icon={faEye} /></a>
-    //     ]
-    // },
-    // {
-    //     id: 2,
-    //     url: "https://joana-trots.github.io/responsive-prototype-with-grids/",
-    //     img_src: img_11,
-    //     title: "Responsive Prototype with Grids",
-    //     description: "This is a Responsive Prototype of web page showing how CSS Grids work",
-    //     tags: [<span className='tag'>Frontend</span>, <span className='tag'>HTML/CSS</span>, <span className='tag'>Grids</span>, <span className='tag'>Responsive</span>],
-    //     links: [
-    //         <a href="https://github.com/joana-trots/responsive-prototype-with-grids" target="_blank" title="See Github repository" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>,
-    //         <a href="https://joana-trots.github.io/responsive-prototype-with-grids/" target="_blank" title="See Live project" rel="noreferrer"><FontAwesomeIcon icon={faEye} /></a>
-    //     ]
-    // },
+    {
+        id: 3,
+        url: "https://joana-trots.github.io/article-preview-component/",
+        img_src: img_08,
+        title: "Article Preview component",
+        description: "A tiny implementation of the share icon by three different ways, when clicked social media links appears - hover effect, checkbox method, JavaScript method",
+        tags: [<span className='tag'>Frontend</span>, <span className='tag'>HTML/CSS</span>, <span className='tag'>Javascript</span>, <span className='tag'>Responsive</span>],
+        links: [
+            <a href="https://github.com/joana-trots/article-preview-component/" target="_blank" title="See Github repository" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>,
+            <a href="https://joana-trots.github.io/article-preview-component/" target="_blank" title="See Live project" rel="noreferrer"><FontAwesomeIcon icon={faEye} /></a>
+        ]
+    },
+    {
+        id: 2,
+        url: "https://joana-trots.github.io/responsive-prototype-with-grids/",
+        img_src: img_11,
+        title: "Responsive Prototype with Grids",
+        description: "This is a Responsive Prototype of web page showing how CSS Grids work",
+        tags: [<span className='tag'>Frontend</span>, <span className='tag'>HTML/CSS</span>, <span className='tag'>Grids</span>, <span className='tag'>Responsive</span>],
+        links: [
+            <a href="https://github.com/joana-trots/responsive-prototype-with-grids" target="_blank" title="See Github repository" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>,
+            <a href="https://joana-trots.github.io/responsive-prototype-with-grids/" target="_blank" title="See Live project" rel="noreferrer"><FontAwesomeIcon icon={faEye} /></a>
+        ]
+    },
     {
         id: 1,
         url: "https://joana-trots.github.io/mobile-poker/",
