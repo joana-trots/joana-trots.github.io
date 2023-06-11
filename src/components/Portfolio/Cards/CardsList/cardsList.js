@@ -22,8 +22,21 @@ import img_17 from '../../../../assets/images/portfolio/boldo-blog.png'
 import img_18 from '../../../../assets/images/portfolio/logo-ceramy.png'
 import img_19 from '../../../../assets/images/portfolio/sale-banner-example.png'
 import img_20 from '../../../../assets/images/portfolio/flashsale-banner.png'
+import img_21 from '../../../../assets/images/portfolio/xm-zero-swaps.png'
 
 export default [
+    {
+        id: 21,
+        url: "https://joana-trots.github.io/xm-zero-swaps/",
+        img_src: img_21,
+        title: "Landing page for Trading company",
+        description: ["This is a responsive page with 3 display sizes, mobile first. Here I'm using the open source API for crypto widgets. Markup and CSS were used with BEM methodology and fully validated. The registration form contains Email and Password fields with validation rules: for the email - valid email format; for the password - 8-15 characters, 1 or more numbers, 1 or more lower case letters, 1 or more uppercase letters, 1 or more special characters (#[]()@$&*!?|,.^/\+_-). Registration button activates after client validation pass, and Success message shows on submit."],
+        tags: [<span className='tag'>Frontend</span>, <span className='tag'>React</span>, <span className='tag'>Mobile first</span>, <span className='tag'>API</span>, <span className='tag'>JSON</span>, <span className='tag'>Axios</span>, <span className='tag'>Form validation</span>, <span className='tag'>Regular Expressions</span>, <span className='tag'>HTML5</span>, <span className='tag'>SASS</span>, <span className='tag'>BEM</span>, <span className='tag'>Slick slider</span>, <span className='tag'>Grids</span>, <span className='tag'>Flexbox</span>, <span className='tag'>Parallax</span>, <span className='tag'>Responsive</span>, <span className='tag'>Adaptive</span>],
+        links: [
+            <a href="https://github.com/joana-trots/boldo-blog" target="_blank" title="See Github repository" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>,
+            <a href="https://github.com/joana-trots/xm-zero-swaps" target="_blank" title="See Live project" rel="noreferrer"><FontAwesomeIcon icon={faEye} /></a>
+        ]
+    },
     {
         id: 17,
         url: "https://joana-trots.github.io/boldo-blog/",
