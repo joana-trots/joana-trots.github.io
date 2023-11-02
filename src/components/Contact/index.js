@@ -39,17 +39,17 @@ const Contact = () => {
                 <form id="contact-form" className={responsed ? 'contact-form display-none' : 'contact-form'} onSubmit={sendEmail}>
                     <div>
                         <label htmlFor='name'>Name</label>
-                        <input type="text" name="name" required />
+                        <input id='name' type="text" name="name" required />
                         <span className='label'>Name</span>
                     </div>
                     <div>
                         <label htmlFor='email'>Email</label>
-                        <input type="email" name="email" required />
+                        <input id='email' type="email" name="email" required />
                         <span className='label'>Email</span>
                     </div>
                     <div>
                         <label htmlFor='message'>Message</label>
-                        <textarea name="message" required></textarea>
+                        <textarea id='message' name="message" required></textarea>
                         <span className='label'>Message</span>
                     </div>
                     <input type="submit" value="Send" className='btn' />
