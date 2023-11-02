@@ -16,7 +16,7 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault()
-        emailjs.sendForm('service_aot765o', 'template_udrsbps', '#contact-form', 'uEvqLwIMS_CzlJXGA')
+        emailjs.sendForm('service_aot765o', 'template_6fhoxf1', '#contact-form', 'uEvqLwIMS_CzlJXGA')
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             setResponsed(!responsed)
