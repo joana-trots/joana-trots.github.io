@@ -4,7 +4,7 @@ import items from '../Cards/CardsList/cardsList'
 const Cards = () => {
     return (
         <div className="portfolio-page__main">  
-            <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 1024: 3}}>
+            <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 3, 1024: 4}}>
                 <Masonry gutter='30px'>      
                     {
                         items.map((item, i) => {

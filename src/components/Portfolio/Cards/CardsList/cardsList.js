@@ -2,29 +2,43 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faFigma } from '@fortawesome/free-brands-svg-icons'
 
-import img_01 from '../../../../assets/images/portfolio/nft-card-preview-component.png'
+import img_01 from '../../../../assets/images/portfolio/nft-card-preview-component.jpg'
 import img_02 from '../../../../assets/images/portfolio/sunnyside-agency-landing-page.jpg'
-import img_03 from '../../../../assets/images/portfolio/loremipsum.net-landing-page.png'
-import img_04 from '../../../../assets/images/portfolio/manao-landing-page.png'
+import img_03 from '../../../../assets/images/portfolio/loremipsum.net-landing-page.jpg'
+import img_04 from '../../../../assets/images/portfolio/manao-landing-page.jpg'
 import img_05 from '../../../../assets/images/portfolio/base-apparel-page.jpg'
-import img_06 from '../../../../assets/images/portfolio/interactive-rating-component.png'
-import img_07 from '../../../../assets/images/portfolio/product-preview-card-component.png'
-import img_08 from '../../../../assets/images/portfolio/article-preview-component.png'
-import img_09 from '../../../../assets/images/portfolio/landie.png'
-import img_10 from '../../../../assets/images/portfolio/mars-one-application-form.png'
-import img_11 from '../../../../assets/images/portfolio/responsive-prototype-with-grids.png'
-import img_12 from '../../../../assets/images/portfolio/mobile-poker.png'
-import img_13 from '../../../../assets/images/portfolio/adinc-logo-concept.png'
-import img_14 from '../../../../assets/images/portfolio/glassmorphism-main-screen.png'
+import img_06 from '../../../../assets/images/portfolio/interactive-rating-component.jpg'
+import img_07 from '../../../../assets/images/portfolio/product-preview-card-component.jpg'
+import img_08 from '../../../../assets/images/portfolio/article-preview-component.jpg'
+import img_09 from '../../../../assets/images/portfolio/landie.jpg'
+import img_10 from '../../../../assets/images/portfolio/mars-one-application-form.jpg'
+import img_11 from '../../../../assets/images/portfolio/responsive-prototype-with-grids.jpg'
+import img_12 from '../../../../assets/images/portfolio/mobile-poker.jpg'
+import img_13 from '../../../../assets/images/portfolio/adinc-logo-concept.jpg'
+import img_14 from '../../../../assets/images/portfolio/glassmorphism-main-screen.jpg'
 import img_15 from '../../../../assets/images/portfolio/go-yandexru.jpg'
-import img_16 from '../../../../assets/images/portfolio/linkedin-banner.png'
-import img_17 from '../../../../assets/images/portfolio/boldo-blog.png'
-import img_18 from '../../../../assets/images/portfolio/logo-ceramy.png'
-import img_19 from '../../../../assets/images/portfolio/sale-banner-example.png'
-import img_20 from '../../../../assets/images/portfolio/flashsale-banner.png'
-import img_21 from '../../../../assets/images/portfolio/xm-zero-swaps.png'
+import img_16 from '../../../../assets/images/portfolio/linkedin-banner.jpg'
+import img_17 from '../../../../assets/images/portfolio/boldo-blog.jpg'
+import img_18 from '../../../../assets/images/portfolio/logo-ceramy.jpg'
+import img_19 from '../../../../assets/images/portfolio/sale-banner-example.jpg'
+import img_20 from '../../../../assets/images/portfolio/flashsale-banner.jpg'
+import img_21 from '../../../../assets/images/portfolio/xm-zero-swaps.jpg'
+import img_22 from '../../../../assets/images/portfolio/haus-estate.jpg'
+
 
 export default [
+    {
+        id: 22,
+        url: "http://haus-estate.by/",
+        img_src: img_22,
+        title: "Landing page for Real estate Agency HAUS",
+
+        tags: [<span className='tag'>Frontend</span>, <span className='tag'>HTML5</span>, <span className='tag'>SASS</span>, <span className='tag'>Bootstrap 5</span>, <span className='tag'>Flexbox</span>],
+        links: [
+            <a href="https://github.com/joana-trots/haus" target="_blank" title="See Github repository" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>,
+            <a href="https://haus-estate.by/" target="_blank" title="See Live project" rel="noreferrer"><FontAwesomeIcon icon={faEye} /></a>
+        ]
+    },
     {
         id: 21,
         url: "https://joana-trots.github.io/xm-zero-swaps/",
